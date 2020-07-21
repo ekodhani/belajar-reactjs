@@ -2,7 +2,7 @@ import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
-class NavbarComponent extends React.Component {
+class SideNavComponent extends React.Component {
     componentDidMount() {
         let sidenav = document.querySelector('#slide-out');
         M.Sidenav.init(sidenav, {});
@@ -30,11 +30,11 @@ class NavbarComponent extends React.Component {
                         <a href="#name"><span className="white-text name">Dhaniflw</span></a>
                         <a href="#email"><span className="white-text email">ekonurramadhani@gmail.com</span></a>
                     </div></li>
-                    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-                    <li><a href="#!">Second Link</a></li>
+                    <li><a href="#!"><i class="material-icons">dashboard</i>Beranda</a></li>
+                    <li><a href="#!"><i class="material-icons">account_box</i>Profile</a></li>
                     <li><div className="divider"></div></li>
-                    <li><a className="subheader">Subheader</a></li>
-                    <li><a className="waves-effect" href="#!">Third Link With Waves</a></li>
+                    {/* <li><a className="subheader">Subheader</a></li>
+                    <li><a className="waves-effect" href="#!"></a></li> */}
                 </ul>
 
             </div>
@@ -42,4 +42,4 @@ class NavbarComponent extends React.Component {
     }
 }
 
-export default NavbarComponent;
+export default SideNavComponent;
