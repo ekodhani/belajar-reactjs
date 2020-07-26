@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import SideNavComponent from './component/SideNavComponent';
-// import NavbarComponent from './component/NavbarComponent';
 import * as serviceWorker from './serviceWorker';
 import Container from './container/Container';
+
 
 ReactDOM.render(
   <React.StrictMode>
